@@ -10,6 +10,12 @@
 	<script src="https://unpkg.com/animejs@2.2.0/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
+<style>
+body::after{
+   position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+   content:url(/dist/images/bg-mac.png);
+}
+</style>
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
         <header class="site-header">
@@ -300,7 +306,7 @@
 										15.000 Power User pro Jahr<br>
 										<strong>500.000 gelernte Fragen/Tag</strong><br>
 
-										<div class="text-xs mt-8">(<a href="http://www.statistik.at/web_de/statistiken/energie_umwelt_innovation_mobilitaet/verkehr/strasse/fuehrerscheine_lenkberechtigungen/index.html">Statistik Austria</a>: Führerschein Ersterteilungen 2019: 52.514)</div>
+										<div class="text-xs mt-8">(<a href="http://www.statistik.at/web_de/statistiken/energie_umwelt_innovation_mobilitaet/verkehr/strasse/fuehrerscheine_lenkberechtigungen/index.html" class="link-nocolor">Statistik Austria</a>: Führerschein Ersterteilungen 2019: 52.514)</div>
 									</p>
                                 </div>
                             </div>
