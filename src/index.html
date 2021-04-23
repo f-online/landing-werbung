@@ -63,7 +63,7 @@ body::after{
 	                        <p class="hero-paragraph">Auf F-Online erreichst du zielgerichtet ein kaufkräftiges Publikum, das sich auf die Führerscheinprüfung vorbereitet.</p>
 							<div class="hero-form field field-grouped">
 								<div class="control">
-									<a class="button button-primary button-block" href="#ask">Weitere Informationen anfordern</a>
+									<a class="button button-primary button-block" href="#ask" onclick="_paq.push(['trackEvent', 'click', 'top-action-button']);">Weitere Informationen anfordern</a>
 								</div>
 							</div>
 						</div>
@@ -474,9 +474,9 @@ body::after{
                         </div>
                         <div class="footer-form newsletter-form field">
                             <div class="control">
-                                <a class="button button-primary button-block button-shadow" href="mailto:info@f-online.at?subject=Werben auf F-Online&body=Bitte um Zusendung weitere Informationen bzw. Kontaktaufnahme.%0A%0AMit Freundlichen Grüßen">Information per Email anfordern</a>
+                                <a class="button button-primary button-block button-shadow" href="mailto:info@f-online.at?subject=Werben auf F-Online&body=Bitte um Zusendung weitere Informationen bzw. Kontaktaufnahme.%0A%0AMit Freundlichen Grüßen" onclick="_paq.push(['trackEvent', 'click', 'bottom-email-button']);">Information per Email anfordern</a>
                             </div>
-							<p class="text-xs mt-16	 text-center">(oder einfach Email an <a href="mailto:info@f-online.at">info@f-online.at</a>)</p>
+							<p class="text-xs mt-16	 text-center">(oder einfach Email an <a href="mailto:info@f-online.at" onclick="_paq.push(['trackEvent', 'click', 'bottom-email-native']);">info@f-online.at</a>)</p>
                         </div>
                     </div>
                 </div>
@@ -500,5 +500,23 @@ body::after{
     </div>
 
     <script src="dist/js/main.min.js"></script>
+
+<script type="text/javascript">
+	var _paq = window._paq || [];
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	_paq.push(["setDoNotTrack", true]);
+	_paq.push(["disableCookies"]);
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+	  var u="https://piwik.inlupus.at/";
+	  _paq.push(['setTrackerUrl', u+'matomo.php']);
+	  _paq.push(['setSiteId', '14']);
+	  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	  g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+	})();
+  </script>
+  <noscript><p><img src="https://piwik.inlupus.at/matomo.php?idsite=14&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
 </body>
 </html>
