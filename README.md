@@ -1,4 +1,4 @@
-# Mediadaten Landin Page
+# Mediadaten Landing Page
 
 ## Dev
 
